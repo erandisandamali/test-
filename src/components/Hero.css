@@ -1,0 +1,101 @@
+.hero-section {
+  background: #000;
+  color: #00ff88;
+  width: 100%;
+  min-height: 60vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero-content {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 90%;
+  max-width: 1200px;
+}
+
+.hero-left {
+  flex: 1;
+  padding: 2rem;
+}
+
+.typing-animation {
+  font-size: 2.5rem;
+  font-weight: bold;
+  border-right: .15em solid #00ff88;
+  white-space: nowrap;
+  overflow: hidden;
+  width: 0;
+  animation: typing 2.5s steps(30, end) forwards, blink-caret .75s step-end infinite;
+}
+
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: #00ff88; }
+}
+
+.hero-description {
+  margin-top: 1rem;
+  font-size: 1.2rem;
+  color: #00ff88;
+}
+
+.hero-right {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.profile-border {
+  width: 220px;
+  height: 220px;
+  border-radius: 50%;
+  border: 6px solid #00ff88;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  animation: rotate-border 4s linear infinite;
+}
+
+@keyframes rotate-border {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+.profile-img {
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  object-fit: cover;
+  background: #222;
+}
+
+@media (max-width: 900px) {
+  .hero-content {
+    flex-direction: column;
+    align-items: center;
+  }
+  .hero-left, .hero-right {
+    padding: 1rem;
+    width: 100%;
+    text-align: center;
+  }
+  .profile-border {
+    width: 160px;
+    height: 160px;
+  }
+  .profile-img {
+    width: 120px;
+    height: 120px;
+  }
+}
