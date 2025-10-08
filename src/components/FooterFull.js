@@ -24,14 +24,6 @@ const FooterFull = () => (
           <li><a href="#contact">Contact</a></li>
         </ul>
       </div>
-      <div className="footer-full-section">
-        <h3 className="footer-full-section-title">Contact Me</h3>
-        <ul className="footer-full-list">
-          <li>Email: <a href="mailto:erandisandamali@gmail.com">erandisandamali@gmail.com</a></li>
-          <li>Phone: <a href="tel:+94771234567">+94 77 123 4567</a></li>
-          <li>Location: Kandy, Sri Lanka</li>
-        </ul>
-      </div>
     </div>
   </footer>
 );

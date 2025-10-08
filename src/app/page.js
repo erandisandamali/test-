@@ -4,7 +4,6 @@ import Projects from '../components/Projects';
 import Contact from '../components/Contact';
 import Services from '../components/Services';
 import QuickLinks from '../components/QuickLinks';
-import ContactInfo from '../components/ContactInfo';
 import FooterFull from '../components/FooterFull';
 export default function Home() {
   return (
@@ -18,7 +17,6 @@ export default function Home() {
   <Projects />
   <Contact />
   <FooterFull />
-  <ContactInfo />
     </main>
   );
 }
